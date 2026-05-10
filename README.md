@@ -10,12 +10,12 @@ kubectl get pods -A
 The namespace will start with "funcom-seabass-sh-"
 
 ## Add an additional Hagga Basin:
-<namespace> = Your namespace
-<command> = add or delete
-<ID> = ID greater than 28
+namespace = Your namespace
+command = add or delete
+ID = ID greater than 28
 
 ## usage
-./survival1.sh <namespace> <command> <ID>
+./survival1.sh namespace command ID
 
 ## example, to add a Hagga Basin
 ./survival1.sh funcom-seabass-sh-xxxxx-yyyy add 3
