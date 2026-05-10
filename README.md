@@ -1,25 +1,25 @@
-## Dune-Awakening
+# Dune-Awakening
 Dune Awakening scripts I've made
 
-# Script to add a Hagga Basin
+## Script to add a Hagga Basin
 
-# Prerequists:
+## Prerequists:
 You need to know the namespace of the pods running your server, you can get that with:
 kubectl get pods -A
 
 The namespace will start with "funcom-seabass-sh-"
 
-# Add an additional Hagga Basin:
+## Add an additional Hagga Basin:
 <namespace> = Your namespace
 <command> = add or delete
 <ID> = ID greater than 28
 
-# usage
+## usage
 ./survival1.sh <namespace> <command> <ID>
 
-# example, to add a Hagga Basin
+## example, to add a Hagga Basin
 ./survival1.sh funcom-seabass-sh-xxxxx-yyyy add 3
 
-# example, to delete a Hagga Basin
+## example, to delete a Hagga Basin
 ./survival1.sh funcom-seabass-sh-xxxxx-yyyy delete 3
 
