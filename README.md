@@ -4,7 +4,7 @@ Dune Awakening scripts I've made
 ## Script to add a Hagga Basin
 
 ## Prerequists:
-1: You myst have python3 and py3-yaml installed on the server, they can be installed on alpine like:
+1: You must have python3 and py3-yaml installed on the server, they can be installed on alpine like:
 
 apk add python3 py3-yaml
 
