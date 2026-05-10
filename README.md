@@ -11,7 +11,9 @@ The namespace will start with "funcom-seabass-sh-"
 
 ## Add an additional Hagga Basin:
 namespace = Your namespace
+
 command = add or delete
+
 ID = ID greater than 28
 
 ## usage
