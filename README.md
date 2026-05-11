@@ -1,8 +1,6 @@
 # Dune-Awakening
 Dune Awakening scripts I've made
 
-## Script to add a Hagga Basin
-
 ## Prerequists:
 1: You must have python3 and py3-yaml installed on the server, they can be installed on alpine like:
 
@@ -13,6 +11,8 @@ apk add python3 py3-yaml
 kubectl get pods -A
 
 The namespace will start with "funcom-seabass-sh-"
+
+## Script to add a Hagga Basin
 
 ## Add an additional Hagga Basin:
 namespace = Your namespace
@@ -30,3 +30,14 @@ ID = ID greater than 28
 ## example, to delete a Hagga Basin
 ./survival1.sh funcom-seabass-sh-xxxxx-yyyy delete 3
 
+## Script to enable Deep Desert, HarkoVillage, and Arrakeen
+NOTE: ONLY WORKS WITH Deep Desert, HarkoVillage, and Arrakeen
+
+## Enable map
+
+namespace = Your namespace
+
+./enable_map.sh namespace
+
+## example
+./enable_map.sh funcom-seabass-sh-xxxxx-yyyy
