@@ -126,6 +126,7 @@ for item in sets:
 if target_set is not None:
     target_set["partitions"] = active_ids
     target_set["replicas"] = active_count
+    target_set["dedicatedScaling"] = False
 
 # Update director.ini if present.
 director_files = (
@@ -149,7 +150,7 @@ if director_ini:
         section = match.group(0)
 
         min_servers = active_count
-        num_extra = max(0, active_count - 1)
+        num_extra = 0
 
         if re.search(r"(?m)^MinServers\s*=", section):
             section = re.sub(r"(?m)^MinServers\s*=.*$", f"MinServers = {min_servers}", section)
